@@ -11,7 +11,6 @@ entity fifo is
              elem_out : out std_logic_vector (ELEM_BITS-1 downto 0));
 end fifo;
 
-
 architecture arch of fifo is
     type elem_array_type is array(ELEM_NUM-1 downto 0) of std_logic_vector (ELEM_BITS-1 downto 0);
     signal elem_array : elem_array_type;
